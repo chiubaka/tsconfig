@@ -1,5 +1,6 @@
 # tsconfig
 
+[![npm](https://img.shields.io/npm/v/@chiubaka/tsconfig)](https://www.npmjs.com/package/@chiubaka/tsconfig)
 [![chiubaka](https://circleci.com/gh/chiubaka/tsconfig.svg?style=shield)](https://app.circleci.com/pipelines/github/chiubaka/tsconfig?filter=all)
 
 This package provides base TSConfig settings for projects in the Chiubaka Technologies ecosystem.
