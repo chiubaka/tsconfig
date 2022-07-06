@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "packageManager": "yarn@3.2.1",
   "scripts": {
+    "publish": "npm publish --access public",
     "test": "yarn tsc -p tsconfig.test.json"
   },
   "files": [
