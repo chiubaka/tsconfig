@@ -10,6 +10,7 @@ __metadata:
   resolution: "@chiubaka/tsconfig@workspace:."
   dependencies:
     "@tsconfig/recommended": ^1.0.1
+    husky: ^8.0.1
     typescript: ^4.7.4
   languageName: unknown
   linkType: soft
@@ -18,6 +19,15 @@ __metadata:
   version: 1.0.1
   resolution: "@tsconfig/recommended@npm:1.0.1"
   checksum: 5f781e6a26277ee86dd0f1d575d18133627908ddf7c78acdcab0e40d0b7f21f4e1462eb8f98b74cda1d05d15fb3629ceea4c622ee031d62e31e7a99281c49294
+  languageName: node
+  linkType: hard
+
+"husky@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "husky@npm:8.0.1"
+  bin:
+    husky: lib/bin.js
+  checksum: 943a73a13d0201318fd30e83d299bb81d866bd245b69e6277804c3b462638dc1921694cb94c2b8c920a4a187060f7d6058d3365152865406352e934c5fff70dc
   languageName: node
   linkType: hard
 
