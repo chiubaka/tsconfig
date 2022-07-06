@@ -2,15 +2,30 @@
   "name": "@chiubaka/tsconfig",
   "version": "0.0.2",
   "packageManager": "yarn@3.2.1",
+  "files": [
+    "tsconfig.json"
+  ],
   "scripts": {
     "lint": "",
     "prepare": "husky install",
     "publish": "npm publish --access public",
     "test": "yarn tsc -p tsconfig.test.json"
   },
-  "files": [
-    "tsconfig.json"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiubaka/tsconfig.git"
+  },
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "chiubaka-technologies"
   ],
+  "author": "Daniel Chiu <daniel@chiubaka.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/chiubaka/tsconfig/issues"
+  },
+  "homepage": "https://github.com/chiubaka/tsconfig#readme",
   "dependencies": {
     "@tsconfig/recommended": "^1.0.1"
   },
