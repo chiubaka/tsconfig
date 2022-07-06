@@ -3,6 +3,11 @@ version: 2.1
 orbs:
   node: circleci/node@5.0.2
 
+executors:
+  node-executor:
+    docker:
+      - image: cimg/node:16.10
+
 commands:
   setup:
     steps:
@@ -17,16 +22,14 @@ commands:
 
 jobs:
   lint:
-    docker:
-      - image: cimg/node:16.10
+    executor: node-executor
     steps:
       - setup
       - run:
           name: Lint code
           command: yarn run lint
   test:
-    docker:
-      - image: cimg/node:16.10
+    executor: node-executor
     steps:
       - setup
       - run:
