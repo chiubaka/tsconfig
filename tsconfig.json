@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "es2017",
+  },
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "exclude": [
+    "**/*.@(test|spec).@(t|j)s?(x)",
+    "**/@(__tests__|__fixtures__)/*"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@chiubaka/tsconfig",
+  "version": "0.0.1",
+  "packageManager": "yarn@3.2.1",
+  "dependencies": {
+    "@tsconfig/recommended": "^1.0.1"
+  },
+  "dependenciesComments": {
+    "@tsconfig/recommended": "Recommended TSConfig settings for base config"
+  }
+}
