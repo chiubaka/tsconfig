@@ -10,7 +10,10 @@
   },
   "extends": "@tsconfig/recommended/tsconfig.json",
   "exclude": [
-    "**/*.@(test|spec).@(t|j)s?(x)",
-    "**/@(__tests__|__fixtures__)/*"
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/__tests__/*"
   ]
 }
