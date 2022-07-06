@@ -9,6 +9,8 @@ jobs:
       - image: cimg/node:16.10
     steps:
       - checkout
+      - node/install-yarn:
+          version: 3.2.1
       - node/install-packages:
           check-cache: always
           pkg-manager: yarn-berry
