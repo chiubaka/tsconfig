@@ -35,9 +35,26 @@ jobs:
       - run:
           name: Run tests
           command: yarn run test
+  publish:
+    executor: node-executor
+    steps:
+      - setup
+      - run:
+          name: Publish to NPM
+          command: yarn run publish
 
 workflows:
   general:
     jobs:
       - lint
       - test
+      - publish:
+          requires:
+            - lint
+            - test
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              # Semantic versioning RegEx from https://semver.org/#is-there-a-suggested-regular-expression-regex-to-check-a-semver-string
+              only: /^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/
