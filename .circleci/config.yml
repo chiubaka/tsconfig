@@ -4,18 +4,20 @@ orbs:
   node: circleci/node@5.0.2
 
 jobs:
-  build-and-test:
+  test:
     docker:
       - image: cimg/node:16.10
     steps:
       - checkout
       - node/install-packages:
-          pkg-manager: yarn
+          check-cache: always
+          pkg-manager: yarn-berry
+          with-cache: false
       - run:
           name: Run tests
-          command: yarn test
+          command: yarn run test
 
 workflows:
   general:
     jobs:
-      - build-and-test
+      - test
