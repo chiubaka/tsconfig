@@ -6,10 +6,12 @@
     "tsconfig.json"
   ],
   "scripts": {
+    "build": "",
     "lint": "",
     "prepare": "husky install",
     "publish": "npm publish --access public",
-    "test": "yarn tsc -p tsconfig.test.json"
+    "test": "yarn tsc -p tsconfig.test.json",
+    "test:ci": "yarn run test"
   },
   "repository": {
     "type": "git",
