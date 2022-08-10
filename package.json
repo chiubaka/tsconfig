@@ -34,6 +34,12 @@
   "dependenciesComments": {
     "@tsconfig/recommended": "Recommended TSConfig settings for base config"
   },
+  "peerDependencies": {
+    "tslib": ">= 2.4.0"
+  },
+  "peerDependenciesComments": {
+    "tslib": "For importHelpers support and other compile-time optimizations"
+  },
   "devDependencies": {
     "husky": "^8.0.1",
     "typescript": "^4.7.4"
