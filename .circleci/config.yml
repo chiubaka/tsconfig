@@ -63,6 +63,7 @@ workflows:
           filters:
             <<: *semver-tags
       - chiubaka/publish:
+          name: publish
           context:
             - npm-publishing
           requires:

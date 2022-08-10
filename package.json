@@ -11,8 +11,8 @@
     "lint": "echo Linting command has not yet been implemented",
     "lint:ci": "yarn lint",
     "prepare": "husky install",
-    "publish": "npm publish --access public",
-    "publish:ci": "yarn publish",
+    "deploy": "npm publish --access public",
+    "deploy:ci": "yarn publish",
     "test": "yarn tsc -p tsconfig.test.json",
     "test:ci": "yarn test"
   },
