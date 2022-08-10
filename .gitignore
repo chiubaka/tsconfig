@@ -8,6 +8,9 @@
 !.yarn/versions
 yarn-error.log
 
+# node
+node_modules
+
 # vscode
 .vscode/*
 !.vscode/settings.json

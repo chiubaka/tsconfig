@@ -6,8 +6,8 @@
     "tsconfig.json"
   ],
   "scripts": {
-    "build": "",
-    "lint": "",
+    "build": "echo Build command has not yet been implemented",
+    "lint": "echo Linting command has not yet been implemented",
     "prepare": "husky install",
     "publish": "npm publish --access public",
     "test": "yarn tsc -p tsconfig.test.json",
