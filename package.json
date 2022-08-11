@@ -12,7 +12,7 @@
     "lint:ci": "yarn lint",
     "prepare": "husky install",
     "deploy": "npm publish --access public",
-    "deploy:ci": "yarn publish",
+    "deploy:ci": "yarn deploy",
     "test": "yarn tsc -p tsconfig.test.json",
     "test:ci": "yarn test"
   },
