@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "declaration": true,
     "declarationMap": true,
+    "composite": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
